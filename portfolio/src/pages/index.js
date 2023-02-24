@@ -6,6 +6,8 @@ import { GrDocumentPdf } from "react-icons/gr";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import ProjectList from './projects';
+import Modal from './modal';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -79,6 +81,8 @@ export default function Home() {
             <p className="flex max-w-full text-left text-2xl p-5">
               Since starting my coding journey, I've created a wide range of apps and websites. Below are some of my favorites!
             </p>
+
+            <ProjectList />
           </div>
 
           <div className="flex flex-wrap min-w-full min-h-screen">
