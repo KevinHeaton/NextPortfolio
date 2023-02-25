@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from "./modal";
-
+import Image from 'next/image';
 
 const ProjectList = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -85,17 +85,21 @@ const ProjectList = () => {
   }
 
   return (
-    <div>
+    <div className="min-w-full justify-center align-middle">
     {isModalOpen && (
     <Modal currentProject={currentProject} onClose={toggleModal} />
     )}
-    <div className="flex-row">
+    <div className="grid grid-cols-4 md:grid-cols-3 md:gap-1 sm:grid-cols-2 gap-2">
       {projects.map((image, i) => (
-        <img id={image.name} className='img-thumbnail' src={require(`../../src/assets/${image.pic}.png`)}
+        <div>
+        <Image id={image.name} className='img-thumbnail m-2' src={`/${image.pic}.png`}
+        width={300}
+        height={300}
         alt={image.name}
         onClick={() => toggleModal(image, i)}
         key={image.name}
       />
+      </div>
       ))}
     </div>
   </div>

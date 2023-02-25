@@ -1,13 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import styles from '@/styles/Home.module.css';
-import { GrDocumentPdf } from "react-icons/gr";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import ProjectList from './projects';
-import Modal from './modal';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -78,7 +74,7 @@ export default function Home() {
               Portfolio
             </h1>
 
-            <p className="flex max-w-full text-left text-2xl p-5">
+            <p className="flex max-w-full text-left text-2xl p-5 min-w-full">
               Since starting my coding journey, I've created a wide range of apps and websites. Below are some of my favorites!
             </p>
 

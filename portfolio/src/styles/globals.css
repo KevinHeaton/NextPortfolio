@@ -6,3 +6,65 @@
   --color-primary: #f00;
   --color-secondary: #0f0;
 }
+
+img {
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+
+/* Modal */
+
+.card {
+  width: 25%;
+  text-align: center;
+}
+
+.modalBackdrop {
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 125px;
+}
+
+.modalContainer {
+	background: steelblue;
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding: 15px;
+	width: 960px;
+}
+
+.modalTitle {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.modalContainer img {
+  height: 300px;
+  width: 400px;
+  justify-content: center;
+  border-radius: 5%;
+}
+
+.modalContainer p {
+  margin: 10px;
+}
+
+button, .closebtn {
+	background: grey;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+  margin: 15px 15px 30px 15px;
+	padding: 10px 15px;	
+}
+
+/* End Modal */
