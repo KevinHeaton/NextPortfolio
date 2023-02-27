@@ -37,12 +37,12 @@ export default function Home() {
             <ul className="flex flex-wrap justify-center">
               <a href="https://www.linkedin.com/in/kevin-heaton-663b2ab5/" target="_blank">
               <li className="m-3">
-                <BsLinkedin size={56} color="blue"/>
+                <BsLinkedin size={56} color="#0277b5"/>
               </li>
               </a>
               <a href="https://github.com/KevinHeaton" target="_blank">
               <li className="m-3">
-                <BsGithub size={56} color="grey"/>
+                <BsGithub size={56} color="white"/>
               </li>
               </a>
             </ul>
@@ -81,27 +81,27 @@ export default function Home() {
             <ProjectList />
           </div>
 
-          <div className="flex flex-wrap min-w-full min-h-screen">
-            <h1 className="align-middle min-w-full flex flex-wrap text-7xl p-5">
+          <div className="flex flex-wrap min-w-full">
+            <h2 className="align-middle min-w-full flex flex-wrap text-7xl p-5">
               Contact Me
-            </h1>
+            </h2>
 
             <p className="flex max-w-full text-left text-2xl p-5">
               Want to get in touch? Feel free to contact me by email or through LinkedIn!
             </p>
 
-            <ul className="flex flex-wrap justify-center">
-              <a href="https://www.linkedin.com/in/kevin-heaton-663b2ab5/" target="_blank">
-              <li className="m-3">
-                <BsLinkedin size={56} color="blue"/>
-              </li>
-              </a>
-              <a href="" target="_blank">
-              <li className="m-3">
-                <MdEmail size={56} color="grey"/>
-              </li>
-              </a>
-            </ul>
+            <div className="min-w-full">
+              <ul className="flex flex-wrap">
+                <a href="https://www.linkedin.com/in/kevin-heaton-663b2ab5/" target="_blank">
+                <li className="m-3">
+                  <BsLinkedin size={56} color="#0277b5"/>
+                </li>
+                </a>
+                <a href="mailto:williamkevinheaton@gmail.com" target="_blank">
+                  <MdEmail size={56} color="white" className="m-3" />
+                </a>
+              </ul>
+            </div>
           </div>
 
         </div>
