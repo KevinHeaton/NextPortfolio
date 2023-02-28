@@ -87,7 +87,7 @@ export default function Home() {
             </h2>
 
             <p className="flex max-w-full text-left text-2xl p-5">
-              Want to get in touch? Feel free to contact me by email or through LinkedIn!
+              Want to get in touch? Feel free to contact me by email at williamkevinheaton@gmail.com or through LinkedIn!
             </p>
 
             <div className="min-w-full">
