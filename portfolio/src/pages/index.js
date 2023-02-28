@@ -81,8 +81,8 @@ export default function Home() {
             <ProjectList />
           </div>
 
-          <div className="flex flex-wrap min-w-full">
-            <h2 className="align-middle min-w-full flex flex-wrap text-7xl p-5">
+          <div className="flex flex-wrap justify-center min-w-full">
+            <h2 className="align-middle min-w-full justify-center flex flex-wrap text-7xl p-5">
               Contact Me
             </h2>
 
@@ -91,7 +91,7 @@ export default function Home() {
             </p>
 
             <div className="min-w-full">
-              <ul className="flex flex-wrap">
+              <ul className="flex flex-wrap justify-center">
                 <a href="https://www.linkedin.com/in/kevin-heaton-663b2ab5/" target="_blank">
                 <li className="m-3">
                   <BsLinkedin size={56} color="#0277b5"/>
