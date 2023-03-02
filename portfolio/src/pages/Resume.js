@@ -27,7 +27,7 @@ const Resume = () => {
       <ResumeModalButton isOpen={isModalOpen} onClose={handleCloseModal}>
         <div className="modalBackdrop">
           <div className="modalContainer">
-            <Document file={'../../public/KevinHeatonResume.pdf'}>
+            <Document file={'files/KevinHeatonResume.pdf'}>
               <Page pageNumber={1} />
             </Document>
           </div>
