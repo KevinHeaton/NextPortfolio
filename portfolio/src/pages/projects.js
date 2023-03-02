@@ -99,9 +99,9 @@ const ProjectList = () => {
     {isModalOpen && (
     <Modal currentProject={currentProject} onClose={toggleModal} />
     )}
-    <div className="grid lg:grid-cols-4 md:grid-cols-3 md:gap-1 sm:grid-cols-2 gap-2">
+    <div className="container grid lg:grid-cols-4 md:grid-cols-3 md:gap-2 sm:grid-cols-2 gap-2">
       {projects.map((image, i) => (
-        <div>
+        <div className='item'>
         <Image id={image.name} className='img-thumbnail m-2' src={`/${image.pic}.png`}
         width={300}
         height={300}

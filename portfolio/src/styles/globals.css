@@ -68,3 +68,32 @@ button, .closebtn {
 }
 
 /* End Modal */
+
+/* scroll-snap for porojects on phone screens */
+
+@media only screen and (max-width: 639px){
+	* {
+		padding: 0; margin: 0;
+		box-sizing: border-box;
+	}
+
+	.container {
+		display: flex;
+		overflow-x: scroll;
+		padding: 12px;
+		height: auto;
+		width: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding: 12px;
+		border-radius: 8px;
+		gap: 6px;
+		margin: 1rem auto;
+	}
+
+	.container .item {
+		flex: 0 0 100%;
+		border-radius: 8px;
+		scroll-snap-align: start;
+	}
+
+}
