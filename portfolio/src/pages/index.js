@@ -4,6 +4,8 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import ProjectList from './projects';
+//import ResumeModal from './resumeModal';
+import Resume from './Resume';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,11 +21,7 @@ export default function Home() {
       <main>
         <div className="min-h-full min-w-full flex flex-wrap bg-cover bg-gradient-to-r from-sky-900 to-indigo-900">
 
-          <div className="flex flex-wrap min-w-full">
-            <button className="absolute top-5 right-5 rounded-lg bg-neutral-800">
-              <h1 className="p-2 justify-center align-middle text-white">Resume</h1>
-            </button>
-          </div>
+          <Resume />
 
           <div className="min-w-full min-h-screen flex flex-wrap flex-col justify-center align-middle">
             <h1 className=" justify-center align-middle min-w-full flex flex-wrap text-9xl">
