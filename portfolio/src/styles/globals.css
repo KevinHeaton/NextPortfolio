@@ -109,3 +109,10 @@ button, .closebtn {
 	}
 
 }
+
+/* @media only screen and (max-width: 405) {
+	h1 {
+		font-size: 20px;
+
+	}
+} */

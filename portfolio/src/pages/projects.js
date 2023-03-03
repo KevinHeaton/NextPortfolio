@@ -95,7 +95,7 @@ const ProjectList = () => {
   }
 
   return (
-    <div className="min-w-full justify-center align-middle">
+    <div className="min-w-full justify-center align-middle p-4">
     {isModalOpen && (
     <Modal currentProject={currentProject} onClose={toggleModal} />
     )}
