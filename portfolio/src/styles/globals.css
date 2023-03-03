@@ -24,6 +24,12 @@ p, a, li, ul, ol, span, button, input, textarea, select, label, div {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+.item {
+	justify-content: center;
+	align-items: center;
+
+}
+
 
 /* Modal */
 
@@ -83,7 +89,7 @@ button, .closebtn {
 
 /* scroll-snap for porojects on phone screens */
 
-@media only screen and (max-width: 639px){
+@media only screen and (max-width: 640px){
 	* {
 		padding: 0; margin: 0;
 		box-sizing: border-box;
