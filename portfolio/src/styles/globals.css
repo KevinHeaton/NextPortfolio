@@ -18,6 +18,7 @@ h2, h3, h4, h5, h6 {
 
 p, a, li, ul, ol, span, button, input, textarea, select, label, div {
 	font-family: 'Source Sans Pro', sans-serif;
+	color: #8993A5;
 }
 
 .item {

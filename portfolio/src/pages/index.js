@@ -11,6 +11,15 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  let gitIconColor = "#171A22"
+  let moonIconColor = "#202837"
+  let emailIconColor = "#202837"
+
+  if (darkMode) {
+    gitIconColor = "#F1F6FC"
+    moonIconColor = "#E3E7F0"
+    emailIconColor = "#E3E7F0"
+  }
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -27,7 +36,7 @@ export default function Home() {
         <div className="min-h-full min-w-full flex flex-wrap bg-cover bg-slate-200 dark:bg-gray-800">
 
           <div className="flex flex-wrap min-w-full">
-            <BsFillMoonStarsFill size={36} color="gray" className="absolute top-11 left-5" onClick={() => setDarkMode(!darkMode)}/>
+            <BsFillMoonStarsFill size={36} color={moonIconColor} className="absolute top-11 left-5" onClick={() => setDarkMode(!darkMode)}/>
             <button className="absolute top-5 right-5 rounded-lg bg-gray-800 dark:bg-slate-200">
               <a href='/files/KevinHeatonResume.pdf' 
                 alt='Resume of Kevin Heaton' 
@@ -41,7 +50,7 @@ export default function Home() {
           </div>
 
           <div className="min-w-full min-h-screen flex flex-wrap flex-col justify-center align-middle">
-            <h1 className=" justify-center align-middle min-w-full flex flex-wrap text-center text-6xl sm:text-9xl">
+            <h1 className=" justify-center align-middle min-w-full flex flex-wrap text-center text-[#1D2135] dark:text-[#F7F7F8] text-6xl sm:text-9xl">
               Kevin Heaton
             </h1>
 
@@ -52,19 +61,19 @@ export default function Home() {
             <ul className="flex flex-wrap justify-center">
               <a href="https://www.linkedin.com/in/kevin-heaton-663b2ab5/" target="_blank">
               <li className="m-3">
-                <BsLinkedin size={56} color="#0277b5"/>
+                <BsLinkedin size={56} color="#0277b5" />
               </li>
               </a>
               <a href="https://github.com/KevinHeaton" target="_blank">
               <li className="m-3">
-                <BsGithub size={56} color="white"/>
+                <BsGithub size={56} color={gitIconColor}/>
               </li>
               </a>
             </ul>
           </div>
 
           <div className="min-w-full min-h-screen">
-            <h2 className="align-middle min-w-full flex flex-wrap text-5xl sm:text-7xl p-5">
+            <h2 className="align-middle min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
               About Me
             </h2>
 
@@ -75,7 +84,7 @@ export default function Home() {
               My previous work experience has allowed me to wear many hats and hone many skills. I have been able to work well under pressure and balance multiple priorities in a constantly evolving environment. Through my time in The Coding Boot Camp at UT Austin I have gained experience as a full stack developer, with in-depth knowledge of JavaScript and other widely used languages and a strong understanding of what it means to work in this field. Throughout my time as a teacher and in The Coding Boot Camp, I have also had the opportunity to work with a diverse group of individuals who come from all backgrounds and I pride myself on always maintaining positive and genuine relationships with my colleagues and superiors.
             </p>
 
-            <h2 className="align-middle min-w-full flex flex-wrap text-5xl sm:text-7xl p-5">
+            <h2 className="align-middle min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
               My Mission
             </h2>
 
@@ -85,7 +94,7 @@ export default function Home() {
           </div>
 
           <div className="min-w-full min-h-screen">
-            <h2 className="align-middle min-w-full flex flex-wrap text-5xl sm:text-7xl p-5">
+            <h2 className="align-middle min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
               Portfolio
             </h2>
 
@@ -97,7 +106,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center min-w-full">
-            <h2 className="align-middle min-w-full justify-center flex flex-wrap text-5xl sm:text-7xl px-5">
+            <h2 className="align-middle min-w-full justify-center flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl px-5">
               Contact Me
             </h2>
 
@@ -113,7 +122,7 @@ export default function Home() {
                 </li>
                 </a>
                 <a href="mailto:williamkevinheaton@gmail.com" target="_blank">
-                  <MdEmail size={56} color="white" className="m-3" />
+                  <MdEmail size={56} color={emailIconColor} className="m-3" />
                 </a>
               </ul>
             </div>
