@@ -7,6 +7,23 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import ProjectList from './projects';
 import { useState } from 'react';
 
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3 } from "react-icons/di";
+import { DiJavascript } from "react-icons/di";
+import { SiJquery } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
+import { FaNodeJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { SiBootstrap } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+
+
+
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -93,7 +110,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="min-w-full min-h-screen">
+          <div className="min-w-full min-h-fit sm:min-h-screen xl:min-h-fit mt-32">
             <h2 className="align-middle min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
               Portfolio
             </h2>
@@ -105,7 +122,29 @@ export default function Home() {
             <ProjectList />
           </div>
 
-          <div className="flex flex-wrap justify-center min-w-full">
+          <div className="min-w-full  min-h-fit flex flex-wrap justify-center align-middle my-32">
+            <h2 className="align-middle justify-center min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
+              My Stack
+            </h2>
+
+            <div className="m-5 grid grid-cols-3 gap-5">
+            <AiFillHtml5 size={56} color="#e34f26" />
+            <DiCss3 size={56} color="#264de4" />
+            <DiJavascript size={56} color="#f0db4f" />
+            <FaReact size={56} color="#61dafb" />
+            <SiNextdotjs size={56} color="#000000" />
+            <FaNodeJs size={56} color="#339933" />
+            <SiJquery size={56} color="#0769ad" />
+            <SiMongodb size={56} color="#47a248" />
+            <SiMysql size={56} color="#4479a1" />
+            <GrGraphQl size={56} color="#e535ab" />
+            <SiBootstrap size={56} color="#563d7c" />
+            <SiTailwindcss size={56} color="#06b6d4" />
+
+            </div>
+          </div>
+
+          <div className="flex flex-wrap justify-center min-w-full my-10">
             <h2 className="align-middle min-w-full justify-center flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl px-5">
               Contact Me
             </h2>
