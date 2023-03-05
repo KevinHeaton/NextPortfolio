@@ -95,14 +95,14 @@ const ProjectList = () => {
   }
 
   return (
-    <div className="min-w-full justify-center align-middle p-4">
+    <div className="min-w-full flex justify-center align-middle p-4">
     {isModalOpen && (
     <Modal currentProject={currentProject} onClose={toggleModal} />
     )}
     <div className="container grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 md:gap-2 sm:grid-cols-2 gap-2">
       {projects.map((image, i) => (
-        <div className='item'>
-        <Image id={image.name} className='img-thumbnail m-2' src={`/${image.pic}.png`}
+        <div className="item">
+        <Image id={image.name} className="img-thumbnail m-2" src={`/${image.pic}.png`}
         width={300}
         height={300}
         alt={image.name}

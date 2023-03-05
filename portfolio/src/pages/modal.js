@@ -6,13 +6,13 @@ function Modal({onClose, currentProject}) {
 
   return (
     <div className="modalBackdrop">
-      <div className="modalContainer">
-        <h3 className="modalTitle">{name}</h3>
+      <div className="modalContainer flex flex-wrap justify-center dark:bg-slate-200 bg-gray-800">
+        <h3 className="modalTitle flex justify-center min-w-full">{name}</h3>
         <Image src={`/${pic}.png`} alt={name} width={300} height={300} />
         <p>{description}</p>
-        <a href={deployed} target="_blank" rel="noreferrer"><button>Deployed Site</button></a>
-        <a href={github} target="_blank" rel="noreferrer"><button>GitHub Repo</button></a>
-        <button className="closebtn" onClick={onClose} type="button">
+        <a href={deployed} target="_blank" rel="noreferrer"><button className="closebtn bg-slate-200 text-gray-800 dark:text-slate-200 dark:bg-gray-800">Deployed Site</button></a>
+        <a href={github} target="_blank" rel="noreferrer"><button className="closebtn bg-slate-200 text-gray-800 dark:text-slate-200 dark:bg-gray-800">GitHub Repo</button></a>
+        <button className="closebtn bg-slate-200 text-gray-800 dark:text-slate-200 dark:bg-gray-800" onClick={onClose} type="button">
           Close
         </button>
       </div>

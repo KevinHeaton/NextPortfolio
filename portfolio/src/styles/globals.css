@@ -21,11 +21,6 @@ p, a, li, ul, ol, span, button, input, textarea, select, label, div {
 	color: #8993A5;
 }
 
-.item {
-	justify-content: center;
-	align-items: center;
-
-}
 
 
 /* Modal */
@@ -45,7 +40,6 @@ p, a, li, ul, ol, span, button, input, textarea, select, label, div {
 }
 
 .modalContainer {
-	background: steelblue;
 	border-radius: 5px;
 	max-width: 100%;
 	margin: 50px auto;
@@ -71,10 +65,8 @@ p, a, li, ul, ol, span, button, input, textarea, select, label, div {
 }
 
 button, .closebtn {
-	background: grey;
 	border: 0;
 	border-radius: 5px;
-	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 600;
@@ -106,16 +98,8 @@ button, .closebtn {
 	}
 
 	.container .item {
-		flex: 0 0 100%;
+		flex: 0 0 65%;
 		border-radius: 8px;
 		scroll-snap-align: start;
 	}
-
 }
-
-/* @media only screen and (max-width: 405) {
-	h1 {
-		font-size: 20px;
-
-	}
-} */

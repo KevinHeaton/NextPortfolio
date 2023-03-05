@@ -77,20 +77,27 @@ export default function Home() {
 
             <ul className="flex flex-wrap justify-center">
               <a href="https://www.linkedin.com/in/kevin-heaton-663b2ab5/" target="_blank">
-              <li className="m-3">
-                <BsLinkedin size={56} color="#0277b5" />
-              </li>
+                <li className="m-3">
+                  <BsLinkedin size={56} color="#0277b5" />
+                </li>
               </a>
+
               <a href="https://github.com/KevinHeaton" target="_blank">
-              <li className="m-3">
-                <BsGithub size={56} color={gitIconColor}/>
-              </li>
+                <li className="m-3">
+                  <BsGithub size={56} color={gitIconColor}/>
+                </li>
+              </a>
+
+              <a href="mailto:williamkevinheaton@gmail.com" target="_blank">
+                <li>
+                 <MdEmail size={56} color={emailIconColor} className="m-3" /> 
+                </li>
               </a>
             </ul>
           </div>
 
-          <div className="min-w-full min-h-screen">
-            <h2 className="align-middle min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
+          <div className="min-w-full min-h-fit">
+            <h2 className="align-middle justify-center min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
               About Me
             </h2>
 
@@ -101,7 +108,7 @@ export default function Home() {
               My previous work experience has allowed me to wear many hats and hone many skills. I have been able to work well under pressure and balance multiple priorities in a constantly evolving environment. Through my time in The Coding Boot Camp at UT Austin I have gained experience as a full stack developer, with in-depth knowledge of JavaScript and other widely used languages and a strong understanding of what it means to work in this field. Throughout my time as a teacher and in The Coding Boot Camp, I have also had the opportunity to work with a diverse group of individuals who come from all backgrounds and I pride myself on always maintaining positive and genuine relationships with my colleagues and superiors.
             </p>
 
-            <h2 className="align-middle min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
+            <h2 className="align-middle justify-center min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
               My Mission
             </h2>
 
@@ -111,11 +118,11 @@ export default function Home() {
           </div>
 
           <div className="min-w-full min-h-fit sm:min-h-screen xl:min-h-fit mt-32">
-            <h2 className="align-middle min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
+            <h2 className="align-middle justify-center min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
               Portfolio
             </h2>
 
-            <p className="flex max-w-full text-left text-xl sm:text-2xl p-5 min-w-full">
+            <p className="justify-center flex max-w-full text-left text-xl sm:text-2xl p-5 min-w-full">
               Since starting my coding journey, I've created a wide range of apps and websites. Below are some of my favorites!
             </p>
 
@@ -127,20 +134,43 @@ export default function Home() {
               My Stack
             </h2>
 
-            <div className="m-5 grid grid-cols-3 gap-5">
-            <AiFillHtml5 size={56} color="#e34f26" />
-            <DiCss3 size={56} color="#264de4" />
-            <DiJavascript size={56} color="#f0db4f" />
-            <FaReact size={56} color="#61dafb" />
-            <SiNextdotjs size={56} color="#000000" />
-            <FaNodeJs size={56} color="#339933" />
-            <SiJquery size={56} color="#0769ad" />
-            <SiMongodb size={56} color="#47a248" />
-            <SiMysql size={56} color="#4479a1" />
-            <GrGraphQl size={56} color="#e535ab" />
-            <SiBootstrap size={56} color="#563d7c" />
-            <SiTailwindcss size={56} color="#06b6d4" />
-
+            <div className="m-5 flex flex-wrap">
+              <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" className="m-1" target="_blank">
+                <AiFillHtml5 size={56} color="#e34f26" />
+              </a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" className="m-1" target="_blank">
+                <DiCss3 size={56} color="#264de4" />
+              </a>
+              <a href="https://www.javascript.com/" className="m-1" target="_blank">
+                <DiJavascript size={56} color="#f0db4f" />
+              </a>
+              <a href="https://reactjs.org/" className="m-1" target="_blank">
+                <FaReact size={56} color="#61dafb" />
+              </a>
+              <a href="https://nextjs.org/" className="m-1" target="_blank">
+                <SiNextdotjs size={56} color="#000000" />
+              </a>
+              <a href="https://nodejs.org/en/" className="m-1" target="_blank">
+                <FaNodeJs size={56} color="#339933" />
+              </a>
+              <a href="https://jquery.com/" className="m-1" target="_blank">
+                <SiJquery size={56} color="#0769ad" />
+              </a>
+              <a href="https://www.mongodb.com/" target="_blank">
+                <SiMongodb size={56} color="#47a248" />
+              </a>
+              <a href="https://www.mysql.com/" className="m-1" target="_blank">
+                <SiMysql size={56} color="#4479a1" />
+              </a>
+              <a href="https://graphql.org/" className="m-1" target="_blank">
+                <GrGraphQl size={56} color="#e535ab" />
+              </a>
+              <a href="https://getbootstrap.com/" className="m-1" target="_blank">
+                <SiBootstrap size={56} color="#563d7c" />
+              </a>
+              <a href="https://tailwindcss.com/" className="m-1" target="_blank">
+                <SiTailwindcss size={56} color="#06b6d4" />
+              </a>
             </div>
           </div>
 
@@ -152,19 +182,6 @@ export default function Home() {
             <p className="flex max-w-full text-left text-xl sm:text-2xl p-5">
               Want to get in touch? Feel free to contact me by email at williamkevinheaton@gmail.com or through LinkedIn!
             </p>
-
-            <div className="min-w-full">
-              <ul className="flex flex-wrap justify-center">
-                <a href="https://www.linkedin.com/in/kevin-heaton-663b2ab5/" target="_blank">
-                <li className="m-3">
-                  <BsLinkedin size={56} color="#0277b5"/>
-                </li>
-                </a>
-                <a href="mailto:williamkevinheaton@gmail.com" target="_blank">
-                  <MdEmail size={56} color={emailIconColor} className="m-3" />
-                </a>
-              </ul>
-            </div>
           </div>
 
         </div>
