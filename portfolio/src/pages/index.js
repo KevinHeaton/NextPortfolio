@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import ProjectList from './projects';
 import { useState } from 'react';
+import AnimatedOnScroll from './animateOnScroll';
 
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
@@ -25,6 +26,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 
 const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -54,7 +56,7 @@ export default function Home() {
 
           <div className="flex flex-wrap min-w-full">
             <BsFillMoonStarsFill size={36} color={moonIconColor} className="absolute top-11 left-5" onClick={() => setDarkMode(!darkMode)}/>
-            <button className="absolute top-5 right-5 rounded-lg bg-gray-800 dark:bg-slate-200">
+            <button className="absolute top-5 right-5 rounded-lg bg-gray-800 hover:bg-gray-900 dark:bg-slate-200 dark:hover:bg-slate-300">
               <a href='/files/KevinHeatonResume.pdf' 
                 alt='Resume of Kevin Heaton' 
                 target='_blank' 
@@ -90,16 +92,19 @@ export default function Home() {
 
               <a href="mailto:williamkevinheaton@gmail.com" target="_blank">
                 <li>
-                 <MdEmail size={56} color={emailIconColor} className="m-3" /> 
+                 <MdEmail size={65} color={emailIconColor} className="m-2" /> 
                 </li>
               </a>
             </ul>
           </div>
 
+          <AnimatedOnScroll>
           <div className="min-w-full min-h-fit">
-            <h2 className="align-middle justify-center min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
+            
+            <h2 className="align-middle justify-center min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5 focus:animate-bounce">
               About Me
             </h2>
+          
 
             <p className="justify-center align-middle flex max-w-full text-left text-xl sm:text-2xl p-5">
               Coding was never something that I imagined myself doing. I had preconceived notions regarding what it meant to be a developer and it felt somewhat out of reach for someone with my experience. However, once I let go of those ideas and gave it a shot I was instantly hooked. I loved being able to create something from scratch and seeing the endless possibilities that programming holds. The more I learned the more I realized you can never know it all and that further fueled my passion. I consider myself a lifelong learner and doing something where you can never stop growing excites me.
@@ -113,22 +118,30 @@ export default function Home() {
             </h2>
 
             <p className="justify-center align-middle flex max-w-full text-left text-xl sm:text-2xl p-5">
-            Front-end web developer employing a background in teaching to create more user friendly experiences. Have earned a certificate in full stack development from the University of Texas Coding Bootcamp, with new skills in HTML, CSS, JavaScript, and more. Always looking for solutions as a relentless problem solver looking for the best responsive designs. Best work is done when working in teams where communication is a top priority. As a part of a high-quality team, a web application that allows people in Austin to post events and allow users to RSVP to them was created. Excited to be a part of a fast paced and driven team to create high-quality, progressive web applications. Best traits are communication, collaboration, and adaptability.
+              Software Developer employing a background in teaching to find creative solutions to coding challenges with skills in JavaScript, React,
+              SQL, and more. Always looking for solutions as a relentless problem solver and consistently looking for the best responsive designs. Excels
+              working in teams where communication is a top priority. Excited to learn new stacks and share learning with others. As a part of a highquality team, created a web application that allows people in Austin to post and RSVP to events. Excited to be a part of a fast paced and
+              driven team to ensure the world continues to run smoothly. Best traits are analyzing complex problems, communication, self-directed, and
+              teamwork.
             </p>
           </div>
+          </AnimatedOnScroll>
 
+          <AnimatedOnScroll>
           <div className="min-w-full min-h-fit sm:min-h-screen xl:min-h-fit mt-32">
             <h2 className="align-middle justify-center min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
               Portfolio
             </h2>
 
             <p className="justify-center flex max-w-full text-left text-xl sm:text-2xl p-5 min-w-full">
-              Since starting my coding journey, I've created a wide range of apps and websites. Below are some of my favorites!
+              Since starting my coding journey, I've created a wide range of apps and websites. My GitHub profile has all of my projects, but below are some of my favorites!
             </p>
 
             <ProjectList />
           </div>
+          </AnimatedOnScroll>
 
+          <AnimatedOnScroll>
           <div className="min-w-full  min-h-fit flex flex-wrap justify-center align-middle my-32">
             <h2 className="align-middle justify-center min-w-full flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl p-5">
               My Stack
@@ -173,7 +186,9 @@ export default function Home() {
               </a>
             </div>
           </div>
+          </AnimatedOnScroll>
 
+          <AnimatedOnScroll>
           <div className="flex flex-wrap justify-center min-w-full my-10">
             <h2 className="align-middle min-w-full justify-center flex flex-wrap text-5xl text-[#1D2135] dark:text-[#F7F7F8] sm:text-7xl px-5">
               Contact Me
@@ -183,6 +198,7 @@ export default function Home() {
               Want to get in touch? Feel free to contact me by email at williamkevinheaton@gmail.com or through LinkedIn!
             </p>
           </div>
+          </AnimatedOnScroll>
 
         </div>
       </main>
